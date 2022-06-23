@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SuperMarketModelStoreContainer" CdmEntityContainer="SuperMarketEntities">
+    <EntitySetMapping Name="Bills">
+      <EntityTypeMapping TypeName="SuperMarketModel.Bill">
+        <MappingFragment StoreEntitySet="Bill">
+          <ScalarProperty Name="Bill_id" ColumnName="Bill_id" />
+          <ScalarProperty Name="Seller_name" ColumnName="Seller_name" />
+          <ScalarProperty Name="Bill_date" ColumnName="Bill_date" />
+          <ScalarProperty Name="product_totale" ColumnName="product_totale" />
+          <ScalarProperty Name="Seller_id" ColumnName="Seller_id" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="SuperMarketModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+          <ScalarProperty Name="Category_name" ColumnName="Category_name" />
+          <ScalarProperty Name="Category_des" ColumnName="Category_des" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="SuperMarketModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+          <ScalarProperty Name="Product_name" ColumnName="Product_name" />
+          <ScalarProperty Name="Product_price" ColumnName="Product_price" />
+          <ScalarProperty Name="Product_Qty" ColumnName="Product_Qty" />
+          <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+          <ScalarProperty Name="Seller_id" ColumnName="Seller_id" />
+          <ScalarProperty Name="Product_Cat" ColumnName="Product_Cat" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sellers">
+      <EntityTypeMapping TypeName="SuperMarketModel.Seller">
+        <MappingFragment StoreEntitySet="Seller">
+          <ScalarProperty Name="Seller_id" ColumnName="Seller_id" />
+          <ScalarProperty Name="Seller_name" ColumnName="Seller_name" />
+          <ScalarProperty Name="Seller_age" ColumnName="Seller_age" />
+          <ScalarProperty Name="Seller_phone" ColumnName="Seller_phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SuperMarketModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bill">
+    <Key>
+      <PropertyRef Name="Bill_id" />
+    </Key>
+    <Property Name="Bill_id" Type="Int32" Nullable="false" />
+    <Property Name="Seller_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Bill_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="product_totale" Type="Int32" />
+    <Property Name="Seller_id" Type="Int32" />
+    <Property Name="total" Type="Int32" />
+    <NavigationProperty Name="Seller" Relationship="Self.Sellr_fk" FromRole="Bill" ToRole="Seller" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Category_id" />
+    </Key>
+    <Property Name="Category_id" Type="Int32" Nullable="false" />
+    <Property Name="Category_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Category_des" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.Category__fk" FromRole="Category" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Product_id" />
+    </Key>
+    <Property Name="Product_id" Type="Int32" Nullable="false" />
+    <Property Name="Product_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Product_price" Type="Int32" Nullable="false" />
+    <Property Name="Product_Qty" Type="Int32" Nullable="false" />
+    <Property Name="Category_id" Type="Int32" />
+    <Property Name="Seller_id" Type="Int32" />
+    <Property Name="Product_Cat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="total" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.Category__fk" FromRole="Product" ToRole="Category" />
+    <NavigationProperty Name="Seller" Relationship="Self.Seller_fk" FromRole="Product" ToRole="Seller" />
+  </EntityType>
+  <EntityType Name="Seller">
+    <Key>
+      <PropertyRef Name="Seller_id" />
+    </Key>
+    <Property Name="Seller_id" Type="Int32" Nullable="false" />
+    <Property Name="Seller_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Seller_age" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Seller_phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Bills" Relationship="Self.Sellr_fk" FromRole="Seller" ToRole="Bill" />
+    <NavigationProperty Name="Products" Relationship="Self.Seller_fk" FromRole="Seller" ToRole="Product" />
+  </EntityType>
+  <Association Name="Sellr_fk">
+    <End Role="Seller" Type="Self.Seller" Multiplicity="0..1" />
+    <End Role="Bill" Type="Self.Bill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seller">
+        <PropertyRef Name="Seller_id" />
+      </Principal>
+      <Dependent Role="Bill">
+        <PropertyRef Name="Seller_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Category__fk">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Category_id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Seller_fk">
+    <End Role="Seller" Type="Self.Seller" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seller">
+        <PropertyRef Name="Seller_id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Seller_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SuperMarketEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bills" EntityType="Self.Bill" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Sellers" EntityType="Self.Seller" />
+    <AssociationSet Name="Sellr_fk" Association="Self.Sellr_fk">
+      <End Role="Seller" EntitySet="Sellers" />
+      <End Role="Bill" EntitySet="Bills" />
+    </AssociationSet>
+    <AssociationSet Name="Category__fk" Association="Self.Category__fk">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="Seller_fk" Association="Self.Seller_fk">
+      <End Role="Seller" EntitySet="Sellers" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,62 @@
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.exe.config
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.exe
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.pdb
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.dll
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.xml
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.AssemblyReference.cache
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Form1.resources
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Properties.Resources.resources
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.GenerateResource.cache
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.CoreCompileInputs.cache
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.CopyComplete
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.exe
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.pdb
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Splash.resources
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Products.resources
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.SqlServer.dll
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.SqlServer.xml
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.SellerForm.resources
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Catogerys.resources
+E:\ITI.net\WindowsForm\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Sellingform.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.exe.config
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.exe
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.pdb
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.dll
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.SqlServer.dll
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.xml
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.SqlServer.xml
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.AssemblyReference.cache
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.SuggestedBindingRedirects.cache
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Form1.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Products.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Properties.Resources.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.SellerForm.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Sellingform.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Splash.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Catogerys.resources
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.GenerateResource.cache
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.CoreCompileInputs.cache
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.CopyComplete
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.exe
+F:\iti\General\Advanced C#\New folder\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.pdb
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.exe.config
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.exe
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\projectWindowsForm.pdb
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.dll
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.SqlServer.dll
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.xml
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\bin\Debug\EntityFramework.SqlServer.xml
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.AssemblyReference.cache
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.SuggestedBindingRedirects.cache
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Form1.resources
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Products.resources
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Properties.Resources.resources
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.SellerForm.resources
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Sellingform.resources
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Splash.resources
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.Catogerys.resources
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.GenerateResource.cache
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.CoreCompileInputs.cache
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.csproj.CopyComplete
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.exe
+M:\ITI\.Net ITI Course\Project 4 - C# WinForms\New folder\projectWindowsForm\projectWindowsForm\obj\Debug\projectWindowsForm.pdb

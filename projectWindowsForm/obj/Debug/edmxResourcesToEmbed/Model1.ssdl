@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SuperMarketModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bill">
+    <Key>
+      <PropertyRef Name="Bill_id" />
+    </Key>
+    <Property Name="Bill_id" Type="int" Nullable="false" />
+    <Property Name="Seller_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Bill_date" Type="date" Nullable="false" />
+    <Property Name="product_totale" Type="int" />
+    <Property Name="Seller_id" Type="int" />
+    <Property Name="total" Type="int" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Category_id" />
+    </Key>
+    <Property Name="Category_id" Type="int" Nullable="false" />
+    <Property Name="Category_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Category_des" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Product_id" />
+    </Key>
+    <Property Name="Product_id" Type="int" Nullable="false" />
+    <Property Name="Product_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Product_price" Type="int" Nullable="false" />
+    <Property Name="Product_Qty" Type="int" Nullable="false" />
+    <Property Name="Category_id" Type="int" />
+    <Property Name="Seller_id" Type="int" />
+    <Property Name="Product_Cat" Type="nvarchar" MaxLength="50" />
+    <Property Name="total" Type="int" />
+  </EntityType>
+  <EntityType Name="Seller">
+    <Key>
+      <PropertyRef Name="Seller_id" />
+    </Key>
+    <Property Name="Seller_id" Type="int" Nullable="false" />
+    <Property Name="Seller_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Seller_age" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Seller_phone" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="Category__fk">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Category_id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Seller_fk">
+    <End Role="Seller" Type="Self.Seller" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seller">
+        <PropertyRef Name="Seller_id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Seller_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Sellr_fk">
+    <End Role="Seller" Type="Self.Seller" Multiplicity="0..1" />
+    <End Role="Bill" Type="Self.Bill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seller">
+        <PropertyRef Name="Seller_id" />
+      </Principal>
+      <Dependent Role="Bill">
+        <PropertyRef Name="Seller_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SuperMarketModelStoreContainer">
+    <EntitySet Name="Bill" EntityType="Self.Bill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Seller" EntityType="Self.Seller" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="Category__fk" Association="Self.Category__fk">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="Seller_fk" Association="Self.Seller_fk">
+      <End Role="Seller" EntitySet="Seller" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="Sellr_fk" Association="Self.Sellr_fk">
+      <End Role="Seller" EntitySet="Seller" />
+      <End Role="Bill" EntitySet="Bill" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
